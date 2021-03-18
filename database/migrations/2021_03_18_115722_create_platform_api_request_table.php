@@ -32,8 +32,8 @@ class CreatePlatformApiRequestTable extends Migration
             $table->string('describe')->nullable();
             $table->timestamps();
 
-            $table->index(['api_id', 'sort_order', 'is_common_param']);
-            $table->unique(['api_id', 'field', 'parent_field','is_common_param']);
+            $table->index(['api_id', 'sort_order', 'is_common_param'],'index_fields');
+            $table->unique(['api_id', 'field', 'parent_field','is_common_param'],'unique_fields');
         });
     }
 
