@@ -16,7 +16,7 @@ class CreateDatahubStatisticTable extends Migration
         Schema::create('datahub_statistic', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->charset = 'utf8mb4';
-            $table->collation = 'utf8mb4_unicode_ci';
+            $table->collation = 'utf8mb4_general_ci';
             $table->uuid('id')->primary();
             $table->integer('data')->nullable()->default(0);
             $table->integer('data_success')->nullable()->default(0);

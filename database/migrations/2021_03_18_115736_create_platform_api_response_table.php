@@ -16,7 +16,7 @@ class CreatePlatformApiResponseTable extends Migration
         Schema::create('platform_api_response', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->charset = 'utf8mb4';
-            $table->collation = 'utf8mb4_unicode_ci';
+            $table->collation = 'utf8mb4_general_ci';
             $table->uuid('id')->primary();
             $table->uuid('api_id');
             $table->string('field');

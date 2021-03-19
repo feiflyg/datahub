@@ -16,7 +16,7 @@ class CreateDatahubTable extends Migration
         Schema::create('datahub', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->charset = 'utf8mb4';
-            $table->collation = 'utf8mb4_unicode_ci';
+            $table->collation = 'utf8mb4_general_ci';
             $table->uuid('id')->primary();
             $table->string('name');
             $table->uuid('lessee_id');
@@ -25,8 +25,8 @@ class CreateDatahubTable extends Migration
             $table->string('source_crontab')->nullable()->default('10 */1 * * *');
             $table->string('target_crontab')->nullable()->default('15 */1 * * *');
             $table->uuid('inherited')->nullable();
-            $table->timestamp('start_at', 0);
-            $table->timestamp('recently_at', 0);
+            $table->timestamp('start_at', 0)->nullable();
+            $table->timestamp('recently_at', 0)->nullable();
             $table->string('describe')->nullable();
             $table->integer('sort_order')->default(0);
             $table->timestamps();

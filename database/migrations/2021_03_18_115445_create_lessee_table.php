@@ -16,7 +16,7 @@ class CreateLesseeTable extends Migration
         Schema::create('lessee', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->charset = 'utf8mb4';
-            $table->collation = 'utf8mb4_unicode_ci';
+            $table->collation = 'utf8mb4_general_ci';
             $table->uuid('id')->primary();
             $table->string('name');
             $table->integer('user_id');
