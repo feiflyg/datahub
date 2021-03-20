@@ -2,12 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
 class LesseeController extends BaseController
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    use ValidatesRequests;
+
+    public function uniqueMobile()
+    {
+    }
+
+    public function verificationCode()
+    {
+    }
+
+    public function register()
+    {
+    }
+
+    public function forgotPassword()
+    {
+    }
 }

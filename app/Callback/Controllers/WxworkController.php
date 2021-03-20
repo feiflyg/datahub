@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Callback\Controllers;
 
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
-class APIController extends BaseController
+class WxworkController extends BaseController
 {
     use ValidatesRequests;
 
-    public function index($platformId,$groupId)
+    public function oa()
     {
     }
     
-    public function show($id)
+    public function verifyURLvalidity()
     {
 
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Lessee\Controllers;
+namespace App\Http\Lessee;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

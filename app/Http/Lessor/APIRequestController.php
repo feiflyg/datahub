@@ -1,23 +1,13 @@
 <?php
 
-namespace App\Http\Lessee;
+namespace App\Http\Lessor;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
-class DebuggerController extends BaseController
+class APIRequestController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-
-    public function command($datahubId,$command)
-    {
-
-    }
-
-    public function help()
-    {
-
-    }
 }

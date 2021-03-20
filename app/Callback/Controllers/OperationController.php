@@ -1,11 +1,14 @@
 <?php
 
-namespace App\Http\Lessee;
+namespace App\Callback\Controllers;
 
+use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
-class DatahubController extends BaseController
+class OperationController extends BaseController
 {
+    use ValidatesRequests;
+
     public function index()
     {
     }
@@ -19,18 +22,6 @@ class DatahubController extends BaseController
     }
 
     public function destroy($id)
-    {
-    }
-
-    public function start($datahubId)
-    {
-    }
-
-    public function stop($datahubId)
-    {
-    }
-
-    public function copy($datahubId)
     {
     }
 }
